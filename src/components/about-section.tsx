@@ -18,7 +18,7 @@ export function AboutSection() {
     <section
       ref={about}
       id="about"
-      className="w-full h-[400px] bg-[#e6e6e6] text-black flex  items-center justify-around gap-4"
+      className="w-full md:h-[400px] bg-[#e6e6e6] text-black flex flex-col md:flex-row items-center md:justify-around gap-4 p-10 md:p-0"
     >
       <h2
         className={`text-5xl font-semibold transition-all duration-700 ${
@@ -31,7 +31,7 @@ export function AboutSection() {
       </h2>
       <p
         style={{ textAlign: "justify" }}
-        className={`w-[420px] transition-all duration-700 delay-300 ${
+        className={`md:w-[420px] transition-all duration-700 delay-300 ${
           hasAnimatedText
             ? "translate-x-0 opacity-1"
             : "-translate-x-10 opacity-0"

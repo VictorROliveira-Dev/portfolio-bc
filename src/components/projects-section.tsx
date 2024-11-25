@@ -20,11 +20,11 @@ export function ProjectsSection() {
   return (
     <section
       ref={projects}
-      className="w-full h-[400px] bg-[#e6e6e6] text-black flex items-center justify-around gap-6"
+      className="w-full md:h-[400px] bg-[#e6e6e6] text-black flex flex-col md:flex-row items-center justify-around gap-6 p-10 md:p-0"
     >
       {/* Animação do título */}
       <h2
-        className={`text-5xl font-semibold transition-all duration-700 ${
+        className={`text-5xl text-center font-semibold transition-all duration-700 ${
           hasAnimatedTitle
             ? "translate-y-0 opacity-1"
             : "-translate-y-10 opacity-0"
@@ -35,7 +35,7 @@ export function ProjectsSection() {
 
       {/* Animação dos itens de projeto */}
       <div
-        className={`flex flex-wrap gap-4 text-white transition-all duration-700 delay-300 ${
+        className={`flex justify-center flex-wrap gap-4 text-white transition-all duration-700 delay-300 ${
           hasAnimatedProjects
             ? "translate-x-0 opacity-1"
             : "-translate-x-10 opacity-0"

@@ -2,12 +2,12 @@ import iconeLink from "../assets/svg/icone-link.svg";
 
 export function MainSection() {
   return (
-    <section className="w-full h-[500px] bg-black text-white flex items-center justify-around">
-      <div className="w-[600px]">
-        <h1 className="text-6xl font-black mb-2">
+    <section className="w-full h-[400px] md:h-[500px] bg-black text-white flex flex-col md:flex-row items-center justify-around">
+      <div className="md:w-[600px]">
+        <h1 className="text-6xl text-center font-black mb-2">
           <span className="text-[#c5ff00]">Brothers</span> Company
         </h1>
-        <p className="text-slate-50/80 text-2xl">
+        <p className="text-slate-50/80 text-center md:text-2xl">
           Transforme sua ideia em um site profissional
         </p>
       </div>

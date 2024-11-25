@@ -21,10 +21,10 @@ export function Footer() {
     <footer
       ref={footer}
       id="contact"
-      className="w-full h-[300px] bg-black text-white flex flex-col items-center justify-center gap-20"
+      className="w-full md:h-[300px] bg-black text-white flex flex-col items-center justify-center gap-20 p-10 md:p-0"
     >
       <div
-        className={`flex gap-20 transition-all duration-700 delay-200 ${
+        className={`flex flex-col md:flex-row gap-20 transition-all duration-700 delay-200 ${
           hasAnimatedTitle
             ? "translate-y-0 opacity-1"
             : "-translate-y-10 opacity-0"

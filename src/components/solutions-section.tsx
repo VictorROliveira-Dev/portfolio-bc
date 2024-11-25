@@ -24,10 +24,10 @@ export function SolutionsSection() {
   return (
     <section
       ref={solutions}
-      className="w-full h-[400px] bg-black text-white flex items-center justify-around gap-6"
+      className="w-full md:h-[400px] bg-black text-white flex flex-col md:flex-row items-center justify-around gap-6 p-10 md:p-0"
     >
       <h2
-        className={`text-5xl font-semibold transition-all duration-300 ${
+        className={`text-5xl text-center font-semibold transition-all duration-300 ${
           hasAnimatedTitle
             ? "translate-y-0 opacity-1"
             : "-translate-y-10 opacity-0"
@@ -38,7 +38,7 @@ export function SolutionsSection() {
       <Accordion
         type="single"
         collapsible
-        className={`w-[400px] transition-all duration-700 delay-300 ${
+        className={`w-[300px] md:w-[400px] transition-all duration-700 delay-300 ${
           hasAnimatedAccordion
             ? "translate-x-0 opacity-1"
             : "-translate-x-10 opacity-0"

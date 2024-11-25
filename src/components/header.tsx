@@ -3,14 +3,14 @@ import logomarca from "../assets/logomarca-header.png";
 export function Header() {
   return (
     <header>
-      <nav className="w-full h-16 flex items-center justify-around bg-[#0c1892]">
+      <nav className="w-full h-16flex items-center justify-around bg-[#0c1892]">
         <img
           src={logomarca}
           alt="Logomarca Brothers Company"
           className="w-[180px]"
         />
 
-        <div className="flex gap-8 text-white font-bold">
+        <div className="hidden md:flex gap-8 text-white font-bold">
           <a href="/" className="hover:text-[#c5ff00] transition-all">
             Home
           </a>
