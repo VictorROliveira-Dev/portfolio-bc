@@ -1,7 +1,6 @@
 import logomarca from "../assets/logomarca-header.png";
 import menuIcon from "../assets/svg/menubar-icon.svg";
 
-import { Button } from "./ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
